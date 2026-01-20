@@ -6,11 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <script type="module" crossorigin src="/portfolio/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-DtZQinaH.css">
+    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-CS7GLvnQ.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
+  <div class="header__container container">
+    <div class="header__logo">
+      <img
+        srcset="/portfolio/assets/user-icon-image-DlC_-wLY.png 1x, /portfolio/assets/user-icon-image@2x-D1g16qQf.png 2x"
+        src="/portfolio/assets/user-icon-image-DlC_-wLY.png"
+        alt="user image"
+      />
+      jefferson*
+    </div>
+
+    <button class="menu-burger" type="button">
+      <svg class="menu-burger__icon" width="28" height="28">
+        <use href="/portfolio/assets/sprite-DOcJ654F.svg#menu"></use>
+      </svg>
+    </button>
+
+    <nav class="navigation">
+      <button class="navigation__btn">Menu</button>
+      <ul class="navigation__list display-none">
+        <li class="navigation__item">
+          <a href="" class="navigation__link">About me</a>
+        </li>
+        <li class="navigation__item">
+          <a href="" class="navigation__link">Benefits</a>
+        </li>
+        <li class="navigation__item">
+          <a href="" class="navigation__link">Projects</a>
+        </li>
+        <li class="navigation__item">
+          <a href="" class="navigation__link">FAQ</a>
+        </li>
+      </ul>
+
+      <a class="cooperation__btn" href=""> Order the project </a>
+    </nav>
   </div>
 </header>
 
@@ -24,6 +58,35 @@
 </section>
     <section>Reviews</section>
     <section>Work together</section>
+
+    <div class="modal-menu__overlay">
+  <div class="modal-menu">
+    <button class="modal-menu__btn-x" type="button">
+      <svg class="" width="28" height="28">
+        <use href="/portfolio/assets/sprite-DOcJ654F.svg#x"></use>
+      </svg>
+    </button>
+
+    <nav class="navigation modal-navigation">
+      <ul class="navigation__list modal-navigation__list">
+        <li class="navigation__item">
+          <a href="" class="navigation__link">About me</a>
+        </li>
+        <li class="navigation__item">
+          <a href="" class="navigation__link">Benefits</a>
+        </li>
+        <li class="navigation__item">
+          <a href="" class="navigation__link">Projects</a>
+        </li>
+        <li class="navigation__item">
+          <a href="" class="navigation__link">FAQ</a>
+        </li>
+      </ul>
+
+      <a class="cooperation__btn modal-cooperation__btn" href=""> Order the project </a>
+    </nav>
+  </div>
+</div>
 
   </body>
 </html>
