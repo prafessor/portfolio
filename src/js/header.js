@@ -28,8 +28,10 @@ navBtn.addEventListener("click", onNavBtnClick);
 
 modalOpenBtn.addEventListener("click", () => {
   modalMenuEl.classList.add("open");
+  document.body.classList.add("no-scroll");
 })
 
 modalCloseBtn.addEventListener("click", () => {
   modalMenuEl.classList.remove("open");
+  document.body.classList.remove("no-scroll");
 })
