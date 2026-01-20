@@ -1,0 +1,59 @@
+.modal-menu__overlay {
+  width: 100%;
+  height: 100%;
+  padding: 32px 16px 64px;
+
+  background: url(../img/hero/menu-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 100%;
+  z-index: 999;
+
+  transition: left 250ms ease-in-out;
+}
+.modal-menu__overlay.open {
+  left: 0;
+}
+
+.modal-menu {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: relative;
+}
+.modal-menu__btn-x {
+  padding: 0;
+  border: none;
+
+  background: none;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.modal-navigation {
+  display: flex;
+  flex-direction: column;
+}
+.modal-navigation__list {
+  display: flex;
+}
+.modal-cooperation__btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  .modal-menu__overlay {
+    display: none;
+  }
+}
