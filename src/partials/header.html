@@ -1,4 +1,41 @@
 <header class="header">
-  <div class="container">
+  <div class="header__container container">
+    <div class="header__logo">
+      <img
+        srcset="
+          ./img/common/user-icon-image.png    1x,
+          ./img/common/user-icon-image@2x.png 2x
+        "
+        src="./img/common/user-icon-image.png"
+        alt="user image"
+      />
+      jefferson*
+    </div>
+
+    <div class="menu-burger">
+      <svg class="menu-burger__icon" width="28" height="28">
+        <use href="./img/sprite.svg#menu"></use>
+      </svg>
+    </div>
+
+    <nav class="navigation">
+      <button class="navigation__btn">Menu</button>
+      <ul class="navigation__list display-none">
+        <li class="navigation__item">
+          <a href="" class="navigation__link">About me</a>
+        </li>
+        <li class="navigation__item">
+          <a href="" class="navigation__link">Benefits</a>
+        </li>
+        <li class="navigation__item">
+          <a href="" class="navigation__link">Projects</a>
+        </li>
+        <li class="navigation__item">
+          <a href="" class="navigation__link">FAQ</a>
+        </li>
+      </ul>
+
+      <a class="cooperation__btn" href=""> Order the project </a>
+    </nav>
   </div>
 </header>
