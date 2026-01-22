@@ -1,5 +1,5 @@
 .about {
-  padding: 64px 0 32px;
+  padding-top: 64px;
 }
 
 .about__container {
@@ -142,10 +142,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .about {
-    padding-bottom: 48px;
-  }
-
   .about__container {
     row-gap: 64px;
   }
@@ -198,7 +194,7 @@
 
 @media screen and (min-width: 1440px) {
   .about {
-    padding: 96px 0 82px;
+    padding-top: 96px;
   }
 
   .about__container {
@@ -223,7 +219,7 @@
 
     align-items: flex-end;
   }
-  
+
   .ac .about-ac__content-about-list {
     gap: 32px;
   }
