@@ -1,0 +1,252 @@
+.about {
+  padding: 64px 0 32px;
+}
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.about-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.about-preview__text-wrapper {
+  height: 500px;
+  border-radius: 24px;
+  padding: 32px;
+
+  background-color: var(--color-gray);
+}
+.about-preview__text {
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+.text-accent-red {
+  color: var(--color-red);
+}
+.text-accent-grey {
+  opacity: 0.4;
+}
+.about-preview__img {
+  width: 100%;
+  height: 500px;
+  border-radius: 24px;
+}
+
+/* Accordion */
+.about-accordion__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ac {
+  --color-white: var(--color-white);
+}
+
+.about-ac__item {
+  border: none;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  margin: 0;
+  padding-bottom: 20px;
+
+  background: none;
+}
+
+.ac .about-ac__title {
+  margin-bottom: 12px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.ac .about-ac__btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 100px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  padding: 9px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ac .about-ac__btn::after {
+  content: '';
+}
+.ac .about-ac__btn-icon {
+  transform: rotate(180deg);
+
+  transition: transform 250ms ease-in-out;
+}
+.ac.is-active .about-ac__btn-icon {
+  transform: rotate(0deg);
+}
+.ac .about-ac__content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ac .about-ac__content-about-list {
+  gap: 32px;
+}
+
+.ac .ac-panel .about-ac__content-item {
+  padding: 0;
+
+  font-family: 'InterTight', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: var(--color-white);
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Swiper */
+.about-swiper {
+  width: 100%;
+}
+
+.about-swiper__slide {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+
+  letter-spacing: -0.02em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-swiper .swiper-slide-active {
+  background-color: var(--color-red);
+}
+
+.swiper-button-next {
+  border: none;
+
+  background: none;
+}
+
+.swiper-button-next:focus {
+  outline: none;
+}
+
+.swiper-button-next__icon {
+  stroke: var(--color-font-gray);
+
+  transition: stroke 250ms ease-in-out;
+}
+
+.swiper-button-next:hover .swiper-button-next__icon,
+.swiper-button-next:focus .swiper-button-next__icon {
+  stroke: var(--color-white);
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    padding-bottom: 48px;
+  }
+
+  .about__container {
+    row-gap: 64px;
+  }
+
+  .about-preview__text-wrapper {
+    height: 700px;
+    padding: 64px;
+  }
+  .about-preview__text {
+    font-size: 38px;
+    line-height: 1.05263;
+  }
+  .about-preview__img {
+    height: 700px;
+  }
+
+  /* Accordion */
+  .about-accordion__container {
+    gap: 32px;
+  }
+
+  .about-ac__item {
+    padding-bottom: 32px;
+  }
+
+  .ac .about-ac__title {
+    margin-bottom: 8px;
+  }
+
+  .ac .about-ac__btn {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+
+  .ac .about-ac__content-about-list {
+    gap: 16px;
+  }
+
+  /* Swiper */
+  .about-swiper__slide {
+    width: 200px;
+    height: 200px;
+
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about {
+    padding: 96px 0 82px;
+  }
+
+  .about__container {
+    row-gap: 96px;
+  }
+
+  .about-preview {
+    flex-direction: row;
+  }
+  .about-preview__text-wrapper {
+    flex-basis: 50%;
+  }
+  .about-preview__img-wrapper {
+    flex-basis: 50%;
+  }
+
+  /* Accordion */
+  .ac .about-ac__content-list {
+    padding-right: 68px;
+
+    align-items: flex-end;
+  }
+  .ac .about-ac__content-about-list {
+    gap: 32px;
+  }
+
+  .ac .ac-panel .about-ac__content-item {
+    width: 612px;
+  }
+
+  /* Swiper */
+  .about-swiper {
+    width: 1312px;
+  }
+}

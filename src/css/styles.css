@@ -9,6 +9,11 @@
 @import url('./base.css');
 @import url('./container.css');
 
+/* Libraries styles */
+@import url('accordion-js/dist/accordion.min.css');
+@import url('swiper/css');
+@import url('swiper/css/navigation');
+
 /* Sections style */
 @import url('./header.css');
 @import url('./hero.css');

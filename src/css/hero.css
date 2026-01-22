@@ -3,7 +3,7 @@
 
   background-image: url(../img/hero/hero-mobile.png);
   background-repeat: no-repeat;
-  background-size: 83%;
+  background-size: 83% 100%;
 }
 @media screen and (min-resolution: 192dpi) {
   .hero {
@@ -26,6 +26,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 4px;
 }
 .hero-social__item {
@@ -34,7 +35,7 @@
   width: 37px;
   height: 37px;
   border-radius: 60px;
-  border: 1px solid rgba(250, 250, 250, 0.2);
+  border: 1px solid #fafafa33;
 
   font-size: 14px;
   letter-spacing: -0.02em;
@@ -42,9 +43,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: border-color 250ms ease-in-out;
 }
 .hero-social__item:last-child .hero-social__link {
   width: 178px;
+}
+.hero-social__link:hover {
+  border-color: var(--color-white);
 }
 
 @media screen and (min-width: 768px) {
