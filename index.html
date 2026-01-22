@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <script type="module" crossorigin src="/portfolio/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-B29ancNC.css">
+    <link rel="modulepreload" crossorigin href="/portfolio/assets/vendor-CnDgbuMd.js">
+    <link rel="stylesheet" crossorigin href="/portfolio/assets/vendor-B7yGNg8H.css">
+    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-CKdT8sW5.css">
   </head>
   <body>
     <header class="header">
@@ -22,7 +24,7 @@
 
     <button class="menu-burger" type="button">
       <svg class="menu-burger__icon" width="28" height="28">
-        <use href="/portfolio/assets/sprite-DOcJ654F.svg#menu"></use>
+        <use href="/portfolio/assets/sprite-Bv3GClAl.svg#menu"></use>
       </svg>
     </button>
 
@@ -74,7 +76,146 @@
   </div>
 </section>
 
-      <section>About me</section>
+      <section class="about" id="about">
+  <div class="container about__container">
+    <h2 class="hidden">About me</h2>
+    <div class="about-preview">
+      <div class="about-preview__text-wrapper">
+        <p class="about-preview__text">
+          I work with people all over the world to create impressive and
+          <span class="text-accent-red">functional</span>
+          <span class="text-accent-grey">websites</span> that reflect each
+          client's unique personality.
+        </p>
+      </div>
+      <picture class="about-preview__img-wrapper">
+        <source
+          srcset="/portfolio/assets/about-desctop-ql3cjFT0.png 1x, /portfolio/assets/about-desctop@2x-CTOqsLdZ.png 2x"
+          media="(max-width: 1440px)"
+        />
+        <source
+          srcset="/portfolio/assets/about-tablet-sXUAmkMR.png 1x, /portfolio/assets/about-tablet@2x-C6rxlp5R.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="/portfolio/assets/about-mobile-B2Tjm0B0.png 1x, /portfolio/assets/about-mobile@2x-B72-Kj-O.png 2x"
+          media="(max-width: 767px)"
+        />
+
+        <img
+          class="about-preview__img"
+          src="/portfolio/assets/about-mobile-B2Tjm0B0.png"
+          alt="My photo"
+        />
+      </picture>
+    </div>
+
+    <!-- Accordion -->
+    <ul class="about-accordion__container">
+      <li class="ac about-ac__item">
+        <h3 class="ac-header about-ac__title">
+          About me
+          <button class="ac-trigger about-ac__btn">
+            <svg class="about-ac__btn-icon" width="20" height="20">
+              <use href="/portfolio/assets/sprite-Bv3GClAl.svg#arrow"></use>
+            </svg>
+          </button>
+        </h3>
+        <ul
+          class="ac-panel about-ac__content-list about-ac__content-about-list"
+        >
+          <li class="ac-text about-ac__content-item">
+            I am Lloyd Jefferson, a talented programmer with extensive expertise
+            in software development. I have an understanding of different
+            programming languages ​​and technologies, always ready to improve my
+            skills. I always follow the latest trends and look for
+            unconventional, creative solutions to problems. I have a high level
+            of analytical skills and am able to effectively solve even the most
+            difficult tasks encountered on the way.
+          </li>
+          <li class="ac-text about-ac__content-item">
+            Able to work both independently and in a team. I can effectively
+            cooperate with colleagues, exchanging ideas and finding optimal
+            solutions. Professional maturity allows you to calmly cope with
+            challenges and stressful situations, while maintaining a high
+            quality of work.I am always looking for opportunities for
+            self-improvement. I actively study new technologies and practices to
+            stay abreast of the latest innovations. I have a strong
+            understanding of various programming languages, frameworks and
+            architectural concepts that allow me to create efficient and
+            scalable software.
+          </li>
+        </ul>
+      </li>
+
+      <li class="ac about-ac__item">
+        <h3 class="ac-header about-ac__title">
+          Role
+          <button class="ac-trigger about-ac__btn">
+            <svg class="about-ac__btn-icon" width="20" height="20">
+              <use href="/portfolio/assets/sprite-Bv3GClAl.svg#arrow"></use>
+            </svg>
+          </button>
+        </h3>
+        <ul class="ac-panel about-ac__content-list">
+          <li class="ac-text about-ac__content-item">Frontend development</li>
+          <li class="ac-text about-ac__content-item">HeadlessCMS,Wordpress</li>
+          <li class="ac-text about-ac__content-item">Blender(enjoy)</li>
+        </ul>
+      </li>
+
+      <li class="ac about-ac__item">
+        <h3 class="ac-header about-ac__title">
+          Aducattion
+          <button class="ac-trigger about-ac__btn">
+            <svg class="about-ac__btn-icon" width="20" height="20">
+              <use href="/portfolio/assets/sprite-Bv3GClAl.svg#arrow"></use>
+            </svg>
+          </button>
+        </h3>
+        <ul class="ac-panel about-ac__content-list">
+          <li class="ac-text about-ac__content-item">
+            2018 - 2019 / Frontend Development Diploma,
+            <span>GoIT IT School, New York</span>
+          </li>
+          <li class="ac-text about-ac__content-item">
+            2019 - 2020 / Advanced Web Development Certificate,
+            <span>GoIT IT School, New York</span>
+          </li>
+          <li class="ac-text about-ac__content-item">
+            2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Swiper -->
+    <div class="swiper about-swiper">
+      <ul class="swiper-wrapper about-swiper__wrapper">
+        <li class="swiper-slide about-swiper__slide">HTML/CSS</li>
+        <li class="swiper-slide about-swiper__slide">JavaScript</li>
+        <li class="swiper-slide about-swiper__slide">React</li>
+        <li class="swiper-slide about-swiper__slide">Node. js</li>
+        <li class="swiper-slide about-swiper__slide">React Native</li>
+        <li class="swiper-slide about-swiper__slide">Soft skills</li>
+        <li class="swiper-slide about-swiper__slide">HTML/CSS</li>
+        <li class="swiper-slide about-swiper__slide">JavaScript</li>
+        <li class="swiper-slide about-swiper__slide">React</li>
+        <li class="swiper-slide about-swiper__slide">Node. js</li>
+        <li class="swiper-slide about-swiper__slide">React Native</li>
+        <li class="swiper-slide about-swiper__slide">Soft skills</li>
+      </ul>
+
+      <button class="swiper-button-next" type="button">
+        <svg class="swiper-button-next__icon" width="28" height="28">
+          <use href="../img/sprite.svg#arrow-narrow"></use>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+</section>
+
       <section>Benefits</section>
       <section>Projects</section>
       <section>FAQ</section>
@@ -89,7 +230,7 @@
   <div class="modal-menu">
     <button class="modal-menu__btn-x" type="button">
       <svg class="" width="28" height="28">
-        <use href="/portfolio/assets/sprite-DOcJ654F.svg#x"></use>
+        <use href="/portfolio/assets/sprite-Bv3GClAl.svg#x"></use>
       </svg>
     </button>
 
