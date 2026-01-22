@@ -4,15 +4,15 @@
   | default @import url()
   |============================
 */
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-
 /* Libraries styles */
 @import url('accordion-js/dist/accordion.min.css');
 @import url('swiper/css');
 @import url('swiper/css/navigation');
+
+/* Common styles */
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
 
 /* Sections style */
 @import url('./header.css');

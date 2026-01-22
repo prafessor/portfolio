@@ -3,14 +3,17 @@
   position: absolute;
   top: 32px;
 }
+
 .header__container {
   display: flex;
   justify-content: space-between;
 }
+
 .header__logo {
   display: flex;
   gap: 8px;
 }
+
 .menu-burger {
   width: 28px;
   height: 28px;
@@ -20,20 +23,22 @@
 
   cursor: pointer;
 }
-.menu-burger__icon {
-}
+
 .navigation {
   display: none;
 }
+
 .navigation__list {
   flex-direction: column;
   align-items: center;
   gap: 12px;
 }
+
 .navigation__link {
   display: flex;
   flex-direction: column;
 }
+
 .navigation__link::after {
   content: '';
   width: 100%;
@@ -44,22 +49,8 @@
 }
 
 .cooperation__btn {
-  width:  164px;
-  height: 45px;
-  border-radius: 60px;
-  padding: 14px 32px;
-
-  background-color: var(--color-red);
-
-  font-size: 14px;
-
-  line-height: 1.25;
-  letter-spacing: -0.02em;
-
-  transition: background-color 250ms ease-in-out;
-}
-.cooperation__btn:hover {
-  background-color: #e0373f;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 
 @media screen and (min-width: 768px) {
@@ -134,21 +125,8 @@
   }
 
   .cooperation__btn {
-    width: 163px;
-    height: 55px;
-    border-radius: 60px;
-    padding: 18px 24px;
-
-    background-color: var(--color-red);
-
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: -0.02em;
-
-    transition: background-color 250ms ease-in-out;
-  }
-  .cooperation__btn:hover {
-    background-color: #e0373f;
+    padding-right: 24px;
+    padding-left: 24px;
   }
 }
 
