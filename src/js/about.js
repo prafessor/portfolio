@@ -20,7 +20,7 @@ const swiper = new Swiper('.about-swiper', {
     enabled: true,
     onlyInViewport: false,
   },
-  A11y: {
+  a11y: {
     enabled: true,
   },
   mousewheel: {
