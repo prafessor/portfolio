@@ -148,6 +148,8 @@ body {
 
 .ac .ac-trigger::after {
   content: '';
+
+  display: none;
 }
 
 .ac .ac-trigger-icon {
