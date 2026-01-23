@@ -96,6 +96,10 @@
   outline: none;
 }
 
+.swiper .swiper-button {
+  margin: 0;
+}
+
 .swiper-button__icon {
   stroke: var(--color-white);
 
