@@ -8,6 +8,7 @@
 @import url('accordion-js/dist/accordion.min.css');
 @import url('swiper/css');
 @import url('swiper/css/navigation');
+@import url('iziToast/dist/css/iziToast.min.css');
 
 /* Common styles */
 @import url('./reset.css');
