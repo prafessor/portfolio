@@ -1,4 +1,5 @@
 import iziToast from "izitoast";
+import { openModalCooperation } from "./modal-cooperation";
 
 const formCooperation = document.querySelector('.work-together-form');
 
@@ -120,10 +121,20 @@ const onFormCooperationSubmit = async evt => {
 
   const isEmailValid = validateEmail(userEmail.value, userEmail);
   if(isEmailValid && comment.value.length > 0) {
-    console.log(formCooperationValue);
 
     const data = await postDataRequest({email: userEmail.value, comment: comment.value})
-    console.log(data);
+
+    if(data !== null) {
+      openModalCooperation();
+      formCooperation.reset();
+
+      validIndicator.textContent = '';
+      validIndicator.classList.remove('success', 'invalid');
+
+      userEmail.classList.remove('success', 'invalid');
+
+      localStorage.removeItem("formCooperation");
+    }
     return;
   }
 

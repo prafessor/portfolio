@@ -116,6 +116,10 @@
   font-size: 16px;
 }
 
+.work-together-form__btn:focus {
+  outline: none;
+}
+
 .work-together-contact__list {
   justify-content: flex-start;
 }
