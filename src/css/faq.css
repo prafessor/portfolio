@@ -17,7 +17,7 @@
   border-top: 1px solid rgba(250, 250, 250, 0.2);
 }
 
-.ac .faq-ac__title {
+.faq-ac-header__wrapper {
   gap: 44px;
 }
 

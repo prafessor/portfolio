@@ -42,6 +42,7 @@ const renderReviews = data => {
               class="reviews-swiper__image"
               src="${avatar_url}"
               alt="User photo"
+              loading="lazy"
             />
             <p class="subtitle reviews-swiper__name">${author}</p>
             <p class="text reviews-swiper__comment">${review}</p>
