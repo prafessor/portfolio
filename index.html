@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <script type="module" crossorigin src="/portfolio/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/portfolio/assets/vendor-CnDgbuMd.js">
+    <link rel="modulepreload" crossorigin href="/portfolio/assets/vendor-CQ71RXvZ.js">
     <link rel="stylesheet" crossorigin href="/portfolio/assets/vendor-B7yGNg8H.css">
-    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-By9jm30v.css">
+    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-Blk_0MsC.css">
   </head>
   <body>
     <header class="header">
@@ -55,21 +55,21 @@
   <div class="container hero__container">
     <h1 class="hero__title"><span>Hello.</span> <span>I’m Fullstack developer</span> <span>Lloyd Jefferson.</span></h1>
     <address>
-      <ul class="hero-social__list">
-        <li class="hero-social__item">
-          <a href="https://www.instagram.com/goitclub/" class="hero-social__link" target="_blank">IG</a>
+      <ul class="social__list">
+        <li class="social__item">
+          <a href="https://www.instagram.com/goitclub/" class="social__link social__link--circle" target="_blank">IG</a>
         </li>
-        <li class="hero-social__item">
-          <a href="https://www.facebook.com/goITclub/" class="hero-social__link" target="_blank">FB</a>
+        <li class="social__item">
+          <a href="https://www.facebook.com/goITclub/" class="social__link social__link--circle" target="_blank">FB</a>
         </li>
-        <li class="hero-social__item">
-          <a href="https://www.youtube.com/c/GoIT" class="hero-social__link" target="_blank">YT</a>
+        <li class="social__item">
+          <a href="https://www.youtube.com/c/GoIT" class="social__link social__link--circle" target="_blank">YT</a>
         </li>
-        <li class="hero-social__item">
-          <a href="https://github.com/prafessor/portfolio" class="hero-social__link" target="_blank">GH</a>
+        <li class="social__item">
+          <a href="https://github.com/prafessor/portfolio" class="social__link social__link--circle" target="_blank">GH</a>
         </li>
-        <li class="hero-social__item">
-          <a href="mailto:lloydjefferson@gmail.com" class="hero-social__link">lloydjefferson@gmail.com</a>
+        <li class="social__item">
+          <a href="mailto:lloydjefferson@gmail.com" class="social__link">lloydjefferson@gmail.com</a>
         </li>
       </ul>
     </address>
@@ -1374,7 +1374,41 @@
   </div>
 </section>
 
-      <section>Work together</section>
+      <section class="work-together">
+  <div class="container work-together__container">
+    <div class="work-together__content">
+      <div class="work-together__title-wrapper">
+        <img class="work-together__image" srcset="/portfolio/assets/user-icon-image-DlC_-wLY.png 1x, /portfolio/assets/user-icon-image@2x-D1g16qQf.png 2x" src="./img/common/user-icon-image.png
+        " alt="Lloyd photo">
+        <h2 class="work-together__title">Let’s <span class="work-together__title--accent text-accent-red">work</span> together</h2>
+      </div>
+      <form class="work-together-form">
+        <div class="work-together-form__field">
+
+          <div class="work-together-form__input-email-wrapper">
+            <input type="email" class="work-together-form__input" name="userEmail" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" placeholder="clients@gmail.com" />
+            <span class="work-together-form__input-email-indicator"></span>
+          </div>
+          <input type="text" class="work-together-form__input" name="comment" placeholder="comments" />
+        </div>
+
+        <button type="submit" class="btn btn--red work-together-form__btn">Send</button>
+      </form>
+
+      <address>
+        <ul class="social__list work-together-contact__list">
+          <li class="social__item work-together-contact__item">
+            <a href="mailto:lloydjefferson@gmail.com" class="social__link work-together-contact__link">lloydjefferson@gmail.com</a>
+          </li>
+          <li class="social__item work-together-contact__item">
+            <a href="tel:+3801111111111" class="social__link work-together-contact__link">+380 11 1111 11 11</a>
+          </li>
+        </ul>
+      </address>
+    </div>
+  </div>
+</section>
+
     </main>
 
     <div class="modal-menu__overlay">
@@ -1403,6 +1437,18 @@
 
       <a class="btn btn--red cooperation__btn modal-cooperation__btn" href=""> Order the project </a>
     </nav>
+  </div>
+</div>
+    <div class="modal-cooperation__overlay">
+  <div class="modal-cooperation__modal">
+    <button type="button" class="modal-cooperation__btn-x">
+      <svg class="modal-cooperation__btn-x-icon" width="24" height="24">
+        <use href="/portfolio/assets/sprite-Bv3GClAl.svg#x"></use>
+      </svg>
+    </button>
+
+    <h2 class="subtitle modal-cooperation__title">Thank you for your interest in cooperation!</h2>
+    <p class="text modal-cooperation__text">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
   </div>
 </div>
 
