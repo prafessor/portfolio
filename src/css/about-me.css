@@ -102,8 +102,13 @@
 }
 
 /* Swiper */
+.about-swiper__container {
+  position: relative;
+}
+
 .about-swiper {
-  width: 100%;
+  width: 260px;
+  margin: 0;
 }
 
 .about-swiper__slide {
@@ -187,6 +192,10 @@
   }
 
   /* Swiper */
+  .about-swiper {
+    width: 600px;
+  }
+
   .about-swiper__slide {
     width: 200px;
     height: 200px;
@@ -233,6 +242,6 @@
 
   /* Swiper */
   .about-swiper {
-    width: 1312px;
+    width: 1200px;
   }
 }
