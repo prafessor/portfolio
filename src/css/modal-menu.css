@@ -5,17 +5,19 @@
 
   background: url(../img/hero/menu-mobile.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
 
   position: fixed;
   top: 0;
-  left: 100%;
   z-index: 999;
 
-  transition: left 250ms ease-in-out;
+  transform: translateX(100%);
+
+  transition: transform 250ms ease-in-out;
 }
 .modal-menu__overlay.open {
-  left: 0;
+  transform: translateX(0);
 }
 
 .modal-menu {

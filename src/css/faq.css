@@ -18,7 +18,8 @@
 }
 
 .faq-ac-header__wrapper {
-  gap: 44px;
+  /* gap: 44px; */
+  gap: 20px;
 }
 
 .ac .faq-ac__btn {
@@ -51,6 +52,10 @@
 
   .faq-ac__item.is-active {
     padding-bottom: 24px;
+  }
+
+  .faq-ac-header__wrapper {
+    gap: 44px;
   }
 
   .ac .faq-ac__btn {

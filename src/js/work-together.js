@@ -2,11 +2,29 @@ import iziToast from 'izitoast';
 import { openModalCooperation } from './modal-cooperation';
 
 const formCooperation = document.querySelector('.work-together-form');
-
-let formCooperationValue = { userEmail: '', comment: '' };
 const validIndicator = document.querySelector(
   '.work-together-form__input-email-indicator'
 );
+
+let formCooperationValue = { userEmail: '', comment: '' };
+
+// operation with local storage
+const getDataFromLS = name => {
+  try {
+    const data = localStorage.getItem(name);
+
+    if (data !== null) {
+      return JSON.parse(data);
+    }
+    return null;
+  } catch (err) {}
+};
+
+const setDataToLS = (name, data) => {
+  try {
+    localStorage.setItem(name, JSON.stringify(data));
+  } catch (err) {}
+};
 
 // Email validator
 const validateEmail = (value, emailInput) => {
@@ -46,7 +64,7 @@ const validateEmail = (value, emailInput) => {
   return false;
 };
 
-// get form values from LS and set
+// fill form`s fields
 const setformCooperationValue = () => {
   const data = getDataFromLS('formCooperation');
 
@@ -59,15 +77,6 @@ const setformCooperationValue = () => {
 
     validateEmail(userEmail.value, userEmail);
   }
-};
-
-const onFormCooperationInput = evt => {
-  const targetElement = evt.target;
-
-  validateEmail(targetElement.value, targetElement);
-
-  formCooperationValue[targetElement.name] = targetElement.value;
-  setDataToLS('formCooperation', formCooperationValue);
 };
 
 // post reqest
@@ -98,22 +107,15 @@ const postDataRequest = async data => {
   }
 };
 
-// operation with local storage
-const getDataFromLS = name => {
-  try {
-    const data = localStorage.getItem(name);
+// form events
 
-    if (data !== null) {
-      return JSON.parse(data);
-    }
-    return null;
-  } catch (err) {}
-};
+const onFormCooperationInput = evt => {
+  const targetElement = evt.target;
 
-const setDataToLS = (name, data) => {
-  try {
-    localStorage.setItem(name, JSON.stringify(data));
-  } catch (err) {}
+  validateEmail(targetElement.value, targetElement);
+
+  formCooperationValue[targetElement.name] = targetElement.value;
+  setDataToLS('formCooperation', formCooperationValue);
 };
 
 const onFormCooperationSubmit = async evt => {

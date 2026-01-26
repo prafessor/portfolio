@@ -241,6 +241,15 @@
   }
 
   /* Swiper */
+  .about-swiper__container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .about-swiper__container .about-swiper__button-next {
+    right: 32px;
+  }
+
   .about-swiper {
     width: 1200px;
   }
