@@ -9,7 +9,7 @@
 .work-together__content {
   padding: 32px 16px;
 
-  background-image: url(../img/work-together/background-mobile.png);
+  background-image: url(../img/work-together/background-mobile.jpg);
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -132,7 +132,7 @@
   .work-together__content {
     padding: 80px 32px 169px;
 
-    background-image: url(../img/work-together/background-tablet.png);
+    background-image: url(../img/work-together/background-tablet.jpg);
   }
 
   .work-together__title-wrapper {
@@ -182,7 +182,7 @@
   .work-together__content {
     padding: 80px 196px 169px;
 
-    background-image: url(../img/work-together/background-desctop.png);
+    background-image: url(../img/work-together/background-desctop.jpg);
   }
 
   .work-together-form {
