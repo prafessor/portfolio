@@ -34,10 +34,24 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+}
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--color-font-gray);
 }
 
 .hidden {

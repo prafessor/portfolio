@@ -1,5 +1,5 @@
-import iziToast from "izitoast";
-import { openModalCooperation } from "./modal-cooperation";
+import iziToast from 'izitoast';
+import { openModalCooperation } from './modal-cooperation';
 
 const formCooperation = document.querySelector('.work-together-form');
 
@@ -10,8 +10,7 @@ const validIndicator = document.querySelector(
 
 // Email validator
 const validateEmail = (value, emailInput) => {
-
-  if(emailInput.name !== "userEmail") {
+  if (emailInput.name !== 'userEmail') {
     return;
   }
 
@@ -72,29 +71,32 @@ const onFormCooperationInput = evt => {
 };
 
 // post reqest
-const postDataRequest = async (data) => {
+const postDataRequest = async data => {
   try {
-    const response = await fetch("https://portfolio-js.b.goit.study/api/requests", {
-      method: "POST",
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(data),
-    });
+    const response = await fetch(
+      'https://portfolio-js.b.goit.study/api/requests',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      }
+    );
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
     return await response.json();
-  } catch(err) {
+  } catch (err) {
     iziToast.error({
       message: 'Oops... Something went wrong, please try again',
       position: 'topRight',
-  });
-  return null;
+    });
+    return null;
   }
-}
+};
 
 // operation with local storage
 const getDataFromLS = name => {
@@ -120,11 +122,13 @@ const onFormCooperationSubmit = async evt => {
   const { userEmail, comment } = evt.currentTarget.elements;
 
   const isEmailValid = validateEmail(userEmail.value, userEmail);
-  if(isEmailValid && comment.value.length > 0) {
+  if (isEmailValid && comment.value.length > 0) {
+    const data = await postDataRequest({
+      email: userEmail.value,
+      comment: comment.value,
+    });
 
-    const data = await postDataRequest({email: userEmail.value, comment: comment.value})
-
-    if(data !== null) {
+    if (data !== null) {
       openModalCooperation();
       formCooperation.reset();
 
@@ -133,7 +137,7 @@ const onFormCooperationSubmit = async evt => {
 
       userEmail.classList.remove('success', 'invalid');
 
-      localStorage.removeItem("formCooperation");
+      localStorage.removeItem('formCooperation');
     }
     return;
   }
@@ -141,7 +145,7 @@ const onFormCooperationSubmit = async evt => {
   iziToast.warning({
     message: 'Please fill up all fields!',
     position: 'topRight',
-});
+  });
 };
 
 setformCooperationValue();
