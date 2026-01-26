@@ -8,7 +8,7 @@
     <script type="module" crossorigin src="/portfolio/index.js"></script>
     <link rel="modulepreload" crossorigin href="/portfolio/assets/vendor-CQ71RXvZ.js">
     <link rel="stylesheet" crossorigin href="/portfolio/assets/vendor-B7yGNg8H.css">
-    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-Blk_0MsC.css">
+    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-DrlQ9eJU.css">
   </head>
   <body>
     <header class="header">
@@ -32,20 +32,20 @@
       <button class="navigation__btn">Menu</button>
       <ul class="navigation__list display-none">
         <li class="navigation__item">
-          <a href="" class="navigation__link">About me</a>
+          <a href="#about" class="navigation__link">About me</a>
         </li>
         <li class="navigation__item">
-          <a href="" class="navigation__link">Benefits</a>
+          <a href="#benefits" class="navigation__link">Benefits</a>
         </li>
         <li class="navigation__item">
-          <a href="" class="navigation__link">Projects</a>
+          <a href="#projects" class="navigation__link">Projects</a>
         </li>
         <li class="navigation__item">
-          <a href="" class="navigation__link">FAQ</a>
+          <a href="#faq" class="navigation__link">FAQ</a>
         </li>
       </ul>
 
-      <a class="btn btn--red cooperation__btn" href=""> Order the project </a>
+      <a class="btn btn--red cooperation__btn" href="#work-together"> Order the project </a>
     </nav>
   </div>
 </header>
@@ -227,7 +227,7 @@
   </div>
 </section>
 
-      <section class="section benefits">
+      <section class="section benefits" id="benefits">
   <div class="container benefits__container">
     <h2 class="title benefits__title">
       Benefits of working with me
@@ -280,12 +280,12 @@
         </li>
       </ul>
 
-      <a href="" class="btn btn-tranaparent benefits-content__btn-cooperation">Order the project</a>
+      <a href="#work-together" class="btn btn-tranaparent benefits-content__btn-cooperation">Order the project</a>
     </div>
   </div>
 </section>
 
-      <section class="section projects">
+      <section class="section projects" id="projects">
   <div class="container">
     <h2 class="title projects__title">Projects</h2>
 
@@ -389,7 +389,7 @@
   </div>
 </section>
 
-      <section class="section faq">
+      <section class="section faq" id="faq">
   <div class="container">
     <h2 class="title faq__title">FAQ</h2>
 
@@ -1374,34 +1374,63 @@
   </div>
 </section>
 
-      <section class="work-together">
+      <section class="work-together" id="work-together">
   <div class="container work-together__container">
     <div class="work-together__content">
       <div class="work-together__title-wrapper">
-        <img class="work-together__image" srcset="/portfolio/assets/user-icon-image-DlC_-wLY.png 1x, /portfolio/assets/user-icon-image@2x-D1g16qQf.png 2x" src="./img/common/user-icon-image.png
-        " alt="Lloyd photo">
-        <h2 class="work-together__title">Let’s <span class="work-together__title--accent text-accent-red">work</span> together</h2>
+        <img
+          class="work-together__image"
+          srcset="/portfolio/assets/user-icon-image-DlC_-wLY.png 1x, /portfolio/assets/user-icon-image@2x-D1g16qQf.png 2x"
+          src="./img/common/user-icon-image.png
+        "
+          alt="Lloyd photo"
+        />
+        <h2 class="work-together__title">
+          Let’s
+          <span class="work-together__title--accent text-accent-red">work</span>
+          together
+        </h2>
       </div>
       <form class="work-together-form">
         <div class="work-together-form__field">
-
           <div class="work-together-form__input-email-wrapper">
-            <input type="email" class="work-together-form__input" name="userEmail" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" placeholder="clients@gmail.com" />
+            <input
+              type="email"
+              class="work-together-form__input"
+              name="userEmail"
+              pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+              placeholder="clients@gmail.com"
+            />
             <span class="work-together-form__input-email-indicator"></span>
           </div>
-          <input type="text" class="work-together-form__input" name="comment" placeholder="comments" />
+          <input
+            type="text"
+            class="work-together-form__input"
+            name="comment"
+            placeholder="comments"
+          />
         </div>
 
-        <button type="submit" class="btn btn--red work-together-form__btn">Send</button>
+        <button type="submit" class="btn btn--red work-together-form__btn">
+          Send
+        </button>
       </form>
 
       <address>
         <ul class="social__list work-together-contact__list">
           <li class="social__item work-together-contact__item">
-            <a href="mailto:lloydjefferson@gmail.com" class="social__link work-together-contact__link">lloydjefferson@gmail.com</a>
+            <a
+              href="mailto:lloydjefferson@gmail.com"
+              class="social__link work-together-contact__link"
+              >lloydjefferson@gmail.com</a
+            >
           </li>
           <li class="social__item work-together-contact__item">
-            <a href="tel:+3801111111111" class="social__link work-together-contact__link">+380 11 1111 11 11</a>
+            <a
+              href="tel:+3801111111111"
+              class="social__link work-together-contact__link"
+              >+380 11 1111 11 11</a
+            >
           </li>
         </ul>
       </address>
@@ -1422,23 +1451,29 @@
     <nav class="navigation modal-navigation">
       <ul class="navigation__list modal-navigation__list">
         <li class="navigation__item">
-          <a href="" class="navigation__link">About me</a>
+          <a href="#about" class="navigation__link">About me</a>
         </li>
         <li class="navigation__item">
-          <a href="" class="navigation__link">Benefits</a>
+          <a href="#benefits" class="navigation__link">Benefits</a>
         </li>
         <li class="navigation__item">
-          <a href="" class="navigation__link">Projects</a>
+          <a href="#projects" class="navigation__link">Projects</a>
         </li>
         <li class="navigation__item">
-          <a href="" class="navigation__link">FAQ</a>
+          <a href="#faq" class="navigation__link">FAQ</a>
         </li>
       </ul>
 
-      <a class="btn btn--red cooperation__btn modal-cooperation__btn" href=""> Order the project </a>
+      <a
+        class="btn btn--red cooperation__btn modal-cooperation__btn"
+        href="#work-together"
+      >
+        Order the project
+      </a>
     </nav>
   </div>
 </div>
+
     <div class="modal-cooperation__overlay">
   <div class="modal-cooperation__modal">
     <button type="button" class="modal-cooperation__btn-x">
@@ -1447,10 +1482,16 @@
       </svg>
     </button>
 
-    <h2 class="subtitle modal-cooperation__title">Thank you for your interest in cooperation!</h2>
-    <p class="text modal-cooperation__text">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
+    <h2 class="subtitle modal-cooperation__title">
+      Thank you for your interest in cooperation!
+    </h2>
+    <p class="text modal-cooperation__text">
+      The manager will contact you shortly to discuss further details and
+      opportunities for cooperation. Please stay in touch.
+    </p>
   </div>
 </div>
+
 
   </body>
 </html>
