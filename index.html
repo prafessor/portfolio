@@ -8,7 +8,7 @@
     <script type="module" crossorigin src="/portfolio/index.js"></script>
     <link rel="modulepreload" crossorigin href="/portfolio/assets/vendor-CQ71RXvZ.js">
     <link rel="stylesheet" crossorigin href="/portfolio/assets/vendor-B7yGNg8H.css">
-    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-CDbfvv_n.css">
+    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-DNBNXVM6.css">
   </head>
   <body>
     <header class="header">
@@ -182,7 +182,7 @@
         <div class="ac-header__wrapper">
 
           <h3 class="ac-header about-ac__title">
-            Aducattion
+            Education
           </h3>
           <button class="ac-trigger about-ac__btn">
             <svg
@@ -229,7 +229,7 @@
         </ul>
       </div>
 
-      <button class="swiper-button-next" type="button">
+      <button class="swiper-button-next about-swiper__button-next" type="button">
         <svg class="swiper-button-next__icon" width="28" height="28">
           <use href="/portfolio/assets/sprite-Bv3GClAl.svg#arrow-narrow"></use>
         </svg>
@@ -527,14 +527,14 @@
 
           <h3 class="ac-header subtitle faq-ac__title">
             What does the process of developing a software product look like from
-          </button>
-          idea to implementation?
+            idea to implementation?
+          </h3>
           <button class="ac-trigger faq-ac__btn">
             <svg class="ac-trigger-icon" width="20" height="20">
               <use href="/portfolio/assets/sprite-Bv3GClAl.svg#arrow"></use>
             </svg>
+          </button>
         </div>
-        </h3>
 
         <div class="ac-panel faq-ac__content">
           <p class="ac-text text faq-ac__text">
@@ -1513,8 +1513,7 @@
         <img
           class="work-together__image"
           srcset="/portfolio/assets/user-icon-image-DlC_-wLY.png 1x, /portfolio/assets/user-icon-image@2x-D1g16qQf.png 2x"
-          src="./img/common/user-icon-image.png
-        "
+          src="/portfolio/assets/user-icon-image-DlC_-wLY.png"
           alt="Lloyd photo"
         />
         <h2 class="work-together__title">
@@ -1530,7 +1529,7 @@
               type="email"
               class="work-together-form__input"
               name="userEmail"
-              pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+              autocomplete="off"
               placeholder="clients@gmail.com"
             />
             <span class="work-together-form__input-email-indicator"></span>
@@ -1539,6 +1538,7 @@
             type="text"
             class="work-together-form__input"
             name="comment"
+            autocomplete="off"
             placeholder="comments"
           />
         </div>
